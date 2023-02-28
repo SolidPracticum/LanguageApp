@@ -2,11 +2,9 @@ import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import { rootSliceReducer } from "./rootSlice";
 
 const reducers = combineReducers({
-    root: rootSliceReducer
+  root: rootSliceReducer
 });
 
 export const store = configureStore({
-    reducer: reducers
+  reducer: reducers
 });
-
-console.log(store)
