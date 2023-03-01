@@ -7,8 +7,8 @@ export default function CommentSection() {
     <div className={scss.wrapper}>
       <h1>Что ученики говорят о нас?</h1>
       <div className={scss.cards}>
-        {arr.map((el) => (
-          <Card {...el} />
+        {arr.map((el, item) => (
+          <Card key={item} {...el} />
         ))}
       </div>
     </div>
