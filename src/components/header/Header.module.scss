@@ -1,0 +1,35 @@
+.headerWrapper {
+  width: 100%;
+  font-family: Rubik;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2% 0%;
+  margin-left: 0%;
+
+  .select {
+    font-family: Rubik;
+    border: none;
+    margin-left: 25%;
+    height: 17px;
+    color: #606060;
+    text-decoration: none;
+  }
+  .sign {
+    margin-left: 2%;
+    height: 17px;
+    color: #606060;
+    text-decoration: none;
+  }
+  .register {
+    font-family: Rubik;
+    margin-left: 2%;
+    background: #fc6f35;
+    color: white;
+    width: 239px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+  }
+}

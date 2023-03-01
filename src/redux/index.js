@@ -9,4 +9,7 @@ export const store = configureStore({
   reducer: reducers
 });
 
+
 console.log(store);
+
+
