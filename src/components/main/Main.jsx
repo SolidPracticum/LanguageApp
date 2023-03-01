@@ -4,9 +4,9 @@ function Main() {
   return (
     <main className={scss.main}>
       <img className={scss.recta} src="/images/main/Rectangle 33.png" alt="logo" />
-      <h1 className={scss.h1}>
+      <h2 className={scss.h2}>
         Изучай английский легко с <br /> помощью лучших методов
-      </h1>
+      </h2>
       <h5 className={scss.h5}>
         Мы сочетаем лучшие методики для <br /> обучения английскому
       </h5>
