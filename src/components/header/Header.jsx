@@ -23,7 +23,7 @@ function Header() {
         <Link to="/login">
           <button className={scss.register}>Регистрация</button>
         </Link>
-      </div>
+      </div>ksmdlkasmdk;asmndlkjasndkjans
     </header>
   );
 }
