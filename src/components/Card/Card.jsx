@@ -1,7 +1,6 @@
 import StarsRating from "../StarsRating/StarsRating";
 import scss from "./Card.module.scss";
 export default function Card({ img, name, rating, desc, color }) {
-  console.log(img);
   return (
     <div className={scss.wrapper}>
       <div className={scss.imgWrapper}>

@@ -3,12 +3,15 @@
 }
 .imgWrapper {
   display: flex;
+  position: relative;
   justify-content: center;
-  padding-top: 20px;
+  padding-top: 40px;
+  top: 20px;
 }
 .imgWrapper img {
   width: 15%;
   border-radius: 50%;
+  margin-right: 45px;
 }
 .name {
   width: 85%;
@@ -73,6 +76,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  margin-bottom: 40px;
   > p {
     position: relative;
     top: 35px;
