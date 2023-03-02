@@ -1,8 +1,10 @@
 import React from "react";
 import scss from "./Header.module.scss";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 function Header() {
+  const { t } = useTranslation();
   return (
     <header className={scss.headerWrapper}>
       <div className={scss.links}>
@@ -12,16 +14,16 @@ function Header() {
       </div>
       <div></div>
       <select className={scss.select}>
-        <option>Русский</option>
-        <option>English</option>
+        <option>{t("russ")}</option>
+        <option>{t("eng")}</option>
       </select>
       <Link to="/dashboard" className={scss.sign}>
-        Войти
+        {t("login")}
       </Link>
 
       <div className={scss.btn}>
         <Link to="/login">
-          <button className={scss.register}>Регистрация</button>
+          <button className={scss.register}>{t("reg")}</button>
         </Link>
       </div>
     </header>
