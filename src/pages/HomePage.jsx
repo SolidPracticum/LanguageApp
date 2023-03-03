@@ -8,11 +8,11 @@ import Footer from "../components/footer/Footer";
 function HomePage() {
   return (
     <>
-      <CommentSection />
       <div>
         <Header />
         <Main />
         <Benefits />
+        <CommentSection />
         <Footer />
       </div>
     </>
