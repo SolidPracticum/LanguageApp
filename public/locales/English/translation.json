@@ -21,5 +21,15 @@
   "footer":"Learn anywhere",
   "footer_text":"Leave notes and papers at home and study anywhere, even offline, with our iOS and Android apps. Progress is synced and stored on your phone, computer.",
   "footer_btn":"Register for free",
-  "footer_p": "Learn English with Language Learning!"
+  "footer_p": "Learn English with Language Learning!",
+
+  "aside":"Home",
+  "store": "Store",
+  "abc": "Dictionaries",
+  "profile": "Profile",
+
+  "comment": "What students say about us?"
+
+
+
 }
