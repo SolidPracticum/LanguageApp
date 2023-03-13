@@ -7,6 +7,7 @@ export default function CommentSection() {
   const { t } = useTranslation();
   return (
     <div className={scss.wrapper}>
+      <h1>{t("Что ученики говорят о нас?")}</h1>
       <h1>{t("comment")}</h1>
       <div className={scss.cards}>
         {arr.map((el, item) => (
