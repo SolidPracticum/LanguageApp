@@ -1,6 +1,8 @@
 import StarsRating from "../StarsRating/StarsRating";
 import scss from "./Card.module.scss";
+import { useTranslation } from "react-i18next";
 export default function Card({ img, name, rating, desc, color }) {
+  const { t } = useTranslation();
   return (
     <div className={scss.wrapper}>
       <div className={scss.imgWrapper}>
@@ -13,7 +15,7 @@ export default function Card({ img, name, rating, desc, color }) {
           }}
           className={scss.name}
         >
-          <p>{name}</p>
+          <p>{t(`${name}`)}</p>
           <StarsRating rating={rating} />
           <div className={scss.t}>
             <div
@@ -38,7 +40,7 @@ export default function Card({ img, name, rating, desc, color }) {
           </div>
         </div>
         <div className={scss.desc}>
-          <p>{desc}</p>
+          <p>{t(`${desc}`)}</p>
         </div>
       </div>
     </div>
