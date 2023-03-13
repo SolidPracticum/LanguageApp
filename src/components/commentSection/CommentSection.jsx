@@ -8,6 +8,7 @@ export default function CommentSection() {
   return (
     <div className={scss.wrapper}>
       <h1>{t("Что ученики говорят о нас?")}</h1>
+      <h1>{t("comment")}</h1>
       <div className={scss.cards}>
         {arr.map((el, item) => (
           <Card key={item} {...el} />
