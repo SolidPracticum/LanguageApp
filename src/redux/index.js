@@ -1,10 +1,8 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import { rootSliceReducer } from "./rootSlice";
-
-const reducers = combineReducers({
-  root: rootSliceReducer
-});
+import { configureStore } from "@reduxjs/toolkit";
+import registrSlice from "./registrSlice";
 
 export const store = configureStore({
-  reducer: reducers
+  reducer: {
+    login: registrSlice
+  }
 });
