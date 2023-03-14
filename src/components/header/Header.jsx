@@ -1,8 +1,12 @@
+
+/* eslint-disable no-undef */
+import React from "react";
 import React, { useState } from "react";
 import scss from "./Header.module.scss";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-
+// eslint-disable-next-line react/prop-types
+function Header({ isHeader, color }) {
 function Header() {
   const { t, i18n } = useTranslation();
   const [active, setActive] = useState(false);
@@ -19,6 +23,37 @@ function Header() {
           <img src="/images/header/Lang.png" alt="logo" />
         </Link>
       </div>
+   {isHeader ? (
+        <>
+          <Link to="/dashboard" className={scss.mainHeader}>
+            Главная
+          </Link>
+          <select
+            className={scss.select}
+            style={{
+              color: `${color}`
+            }}
+          >
+            <option>Русский</option>
+            <option>English</option>
+          </select>
+        </>
+      ) : (
+        <>
+          <select className={scss.select}>
+            <option>Русский</option>
+            <option>English</option>
+          </select>
+          <Link to="/dashboard" className={scss.sign}>
+            Войти
+          </Link>
+          <div className={scss.btn}>
+            <Link to="/loginPage">
+              <button className={scss.register}>Регистрация</button>
+            </Link>
+          </div>
+        </>
+      )}
       <div className={scss.dropdown}>
         <div className={scss.dropdown_select}>
           <span className={scss.select} onClick={() => setActive(!active)}>
@@ -43,7 +78,7 @@ function Header() {
           <button className={scss.register}>{t("reg")}</button>
         </Link>
       </div>
-    </header>
+     </header>
   );
 }
 export default Header;

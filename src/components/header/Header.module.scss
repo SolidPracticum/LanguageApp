@@ -6,9 +6,25 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 2% 0%;
-  margin-left: 0%;
-
-  
+  margin-left: 1%;
+  .mainHeader {
+    position: relative;
+    left: 30%;
+    padding-left: 50px;
+    height: 17px;
+    color: #606060;
+    text-decoration: none;
+  }
+  .select {
+    font-family: Rubik;
+    border: none;
+    margin-left: 25%;
+    height: 17px;
+    color: #606060;
+    text-decoration: none;
+    cursor: pointer;
+  }
+ margin-left: 0%;
   .sign {
     margin-left: 2%;
     height: 17px;

@@ -7,3 +7,7 @@ body
   overflow-x: hidden;
   font-family: "Montserrat";
 }
+.error-message{
+  color: red;
+  font-size: 10px;
+}
