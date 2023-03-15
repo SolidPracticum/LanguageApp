@@ -7,13 +7,15 @@ import Input from "../../components/input/Input";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { registrData } from "../../redux/registrSlice";
+import { useTranslation } from "react-i18next";
+
 function LoginPage() {
   const [login, setLogin] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [password1, setPassword1] = useState("");
   const [error, setError] = useState("");
-
+  const { t } = useTranslation();
   const dataLog = {
     login: login,
     email: email,
@@ -49,15 +51,15 @@ function LoginPage() {
   return (
     <div>
       <Header isHeader={true} color={"red"} />
-      <Main isMain={true} top={650} />
+      <Main isMain={true} top={640} />
       <form onSubmit={submit} className={scss.form}>
-        <h4 className={scss.h4}>Создайте свой аккаунт!</h4>
+        <h4 className={scss.h4}>{t("akkaunt")}</h4>
         <Input onChange={handleName} type="text" placeholder="Login" required />
         <Input required onChange={handleEmail} type="text" placeholder="Email" />
         <Input required onChange={handlePassword} type="password" placeholder="Пароль" />
-        <Input required onChange={handlePassword1} type="password" placeholder="Повторить пароль" />
+        <Input required onChange={handlePassword1} type="password" placeholder={t("pass1")} />
         <div className="error-message">{error}</div>
-        <button className={scss.button}>Зарегистрироваться</button>
+        <button className={scss.button}>{t("btnLog")}</button>
       </form>
     </div>
   );

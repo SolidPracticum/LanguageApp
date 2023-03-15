@@ -16,12 +16,19 @@
     height: 570px;
     
   }
+  .rectan {
+    height: 570px;
+    position: absolute;
+  }
+  .Main{
+    height: 570px;
+  }
   .hr {
     position: absolute;
     width: 1440px;
     height: 18px;
     left: 0px;
-    top:670px;
+    top:675px;
     background: #107d5c;
   }
   .h2 {
@@ -34,7 +41,7 @@
     top: 180px;
     left: 5%;
     width: 40%;
-    color: #107d5c;
+    color: #3A0CA3;
   }
   .h5 {
     font-family: "inter";
@@ -43,19 +50,19 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    top: 301px;
+    top: 325px;
     left: 5%;
     width: 30%;
-    color: #107d5c;
+    color: #3A0CA3;
   }
   .btn {
     font-family: "Rubik";
     position: absolute;
     width: 257px;
-    height: 60px;
+    height: 50px;
     left: 5%;
-    top: 410px;
-    color: #107d5c;
+    top: 425px;
+    color: #3A0CA3;
     border-radius: 10px;
     border: none;
     box-shadow: 2px 2px rgb(179, 173, 173);
