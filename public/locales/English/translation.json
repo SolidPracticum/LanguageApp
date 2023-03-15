@@ -28,8 +28,10 @@
   "abc": "Dictionaries",
   "profile": "Profile",
 
-  "comment": "What students say about us?"
+  "comment": "What students say about us?",
 
-
+  "akkaunt": "Create your account!",
+  "btnLog": "Register",
+  "pass1": "repeat password"
 
 }

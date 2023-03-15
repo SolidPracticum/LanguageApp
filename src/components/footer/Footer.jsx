@@ -8,7 +8,7 @@ function Footer() {
   return (
     <div className={scss.global}>
       <div className={scss.rash}>
-        <img src="/images/footer/rash.svg" alt="" />
+        <img src="/images/footer/rash.png" alt="foto" />
       </div>
       <div className={scss.right}>
         <div className={scss.descrip}>
@@ -17,8 +17,8 @@ function Footer() {
             <p>{t("footer_text")}</p>
           </div>
           <div>
-            <img src="/images/footer/aplle.svg" alt="" />
-            <img src="/images/footer/google.svg" alt="" />
+            <img className={scss.appl} src="/images/footer/apple.png" alt="logo" />
+            <img src="/images/footer/google.png" alt="logo" />
           </div>
         </div>
       </div>

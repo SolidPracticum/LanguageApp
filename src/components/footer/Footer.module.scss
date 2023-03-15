@@ -4,7 +4,10 @@
   .rash{
     display: flex;
     margin-top: 66px;
-   margin-left:60px ;
+    margin-left:60px ;
+  }
+  .appl{
+    margin-right: 15px;
   }
   .right{
     width: 100%;
@@ -15,7 +18,7 @@
     flex-direction: column;
     h1{
       text-align: center;
-      color: #fc6f35;
+      color: #7209B7;
       font-size: 40px;
       font-family: 'Rubik';
       font-weight: 700;
@@ -40,7 +43,7 @@
     font-family: 'Rubik';
     font-style: normal;
     line-height: 47px;
-    color: #107D5C;
+    color: #3A0CA3;
     
   }
   .reg{
@@ -56,7 +59,7 @@
     width: 517px;
     height: 55px;
     font-family: Rubik;
-    background: #fc6f35;
+    background: #2579F7;
     color: white;
     font-size: 24px;
     border-radius: 10px;
